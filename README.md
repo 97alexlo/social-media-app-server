@@ -3,7 +3,7 @@ https://social-media-app-client-six.vercel.app (Screenshots below if link doesn'
 The backend portion of a responsive social media application that works with [Social Media App Client](https://github.com/97alexlo/social-media-app-client), created as a personal project
 
 ## Screenshots
-![Profile page](https://i.imgur.com/YraCDWl.png)
+[Profile page](https://i.imgur.com/YraCDWl.png)
 ![News Feed page](https://i.imgur.com/l4XmuX6.png)
 ![Comment demo](https://i.imgur.com/3kAGnK8.png)
 ![Create post demo](https://i.imgur.com/zUuBIlt.png)
