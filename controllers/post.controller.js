@@ -42,7 +42,7 @@ module.exports.deletePost = async (req, res) => {
     return res.status(400).send("Invalid post ID");
   }
 
-  if (req.body.filename) {
+  if (req.body.filename && req.body.filename !== "") {
     s3.deleteObject(
       { Bucket: bucketName, Key: req.body.filename },
       (err, data) => {
