@@ -19,13 +19,14 @@ const corsOptions = {
   // methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   // preflightContinue: false,
 };
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
-
-// url for images
-app.use("/images", express.static(path.join(__dirname, "public/uploads")));
 
 // jwt
 app.get("*", checkUser); // for all get requests
