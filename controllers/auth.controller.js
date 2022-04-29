@@ -46,6 +46,7 @@ module.exports.logout = (req, res) => {
   res.cookie("jwt", "", {
     httpOnly: true,
     expires: new Date(0),
+    sameSite: "none",
   });
   res.send("logged out");
   //res.redirect("/");
