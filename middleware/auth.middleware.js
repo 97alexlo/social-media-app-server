@@ -2,6 +2,10 @@ const UserModel = require("../models/user.model.js");
 const jwt = require("jsonwebtoken");
 
 module.exports.checkUser = (req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', process.env.CLIENT_URL);
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE'); // If needed
+  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type'); // If needed
+  res.setHeader('Access-Control-Allow-Credentials', true); // If needed
   // retrive jwt from cookies which was set on login
   const token = req.cookies.jwt;
   if (token) {
