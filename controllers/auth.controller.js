@@ -43,8 +43,11 @@ module.exports.login = async (req, res) => {
 
 module.exports.logout = (req, res) => {
   // empty cookies
-  res.clearCookie("jwt")
-  req.session.destroy();
+  res.cookie("jwt", "", {
+    httpOnly: true,
+    maxAge: 1,
+    sameSite: "none",
+  });
   res.send("logged out");
   //res.redirect("/");
 };

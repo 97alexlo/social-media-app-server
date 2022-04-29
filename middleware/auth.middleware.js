@@ -4,7 +4,7 @@ const jwt = require("jsonwebtoken");
 module.exports.checkUser = (req, res, next) => {
   // retrive jwt from cookies which was set on login
   const token = req.cookies.jwt;
-  if (token) {
+  if (token && token !== "") {
     jwt.verify(token, process.env.TOKEN_SECRET, async (err, decodedToken) => {
       // invalid token
       if (err) {

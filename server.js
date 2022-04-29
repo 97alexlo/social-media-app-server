@@ -27,7 +27,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 // jwt
-app.get("*", checkUser); // for all get requests
+app.get("*", checkUser); 
 // Get jwt token (works only if logged in and returns user id which is stored in the token)
 app.get("/jwtid", requireAuth, (req, res) => {
   res.status(200).send(res.locals.user._id);
