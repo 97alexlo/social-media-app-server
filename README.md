@@ -3,7 +3,7 @@ https://social-media-app-client-six.vercel.app
 The backend portion of a responsive social media application that works with [Social Media App Client](https://github.com/97alexlo/social-media-app-client), independently created by Alex Lo
 
 ## Screenshots
-![Profile page](https://imgur.com/YraCDWl)
+![Profile page](https://i.imgur.com/YraCDWl.png)
 
 ## Features
 * Images uploaded to AWS S3 and also deleted from S3 (when a post is deleted)
