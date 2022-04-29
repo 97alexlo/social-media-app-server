@@ -47,6 +47,7 @@ module.exports.logout = (req, res) => {
     httpOnly: true,
     maxAge: 1,
     sameSite: "none",
+    secure: true,
   });
   res.send("logged out");
   //res.redirect("/");
