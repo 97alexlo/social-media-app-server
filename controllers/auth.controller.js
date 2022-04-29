@@ -32,7 +32,7 @@ module.exports.login = async (req, res) => {
       httpOnly: true, // cannot be accessed with javscript/client-side script
       maxAge: tokenExpiry,
       secure: true,
-      sameSite: "none"
+      sameSite: "none",
     });
     res.status(200).json({ user: user._id });
   } catch (err) {
@@ -43,7 +43,10 @@ module.exports.login = async (req, res) => {
 
 module.exports.logout = (req, res) => {
   // empty cookies
-  res.cookie("jwt", "", { maxAge: 1 }); // 1 milisecond
+  res.cookie("jwt", "", {
+    httpOnly: true,
+    expires: new Date(0),
+  });
   res.send("logged out");
   //res.redirect("/");
 };
