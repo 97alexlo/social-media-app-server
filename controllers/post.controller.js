@@ -53,6 +53,8 @@ module.exports.deletePost = async (req, res) => {
         }
       }
     );
+  } else {
+    return res.status(200).send("Successfully deleted post with no picture");
   }
 };
 
