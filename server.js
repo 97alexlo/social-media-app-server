@@ -1,4 +1,4 @@
-require("dotenv").config({ path: "./config/.env" });
+require("dotenv").config({ path: ".env" });
 require("./config/db.js");
 const express = require("express");
 const userRoutes = require("./routes/user.routes.js");
