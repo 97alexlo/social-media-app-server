@@ -1,7 +1,10 @@
 # Social Media App Server
-(Screenshots below if link doesn't work) \
 https://social-media-app-client-six.vercel.app \
-The backend portion of a responsive social media application that works with [Social Media App Client](https://github.com/97alexlo/social-media-app-client), created as a personal project
+(Screenshots below if link doesn't work) \
+\
+The backend portion of a responsive social media application that works with [Social Media App Client](https://github.com/97alexlo/social-media-app-client), created as a personal project \
+\
+Note: For the app to work in Safari, Prevent Cross Site Tracking must be disabled
 
 ## Features
 * Images uploaded to AWS S3 and also deleted from S3 (when a post is deleted)
