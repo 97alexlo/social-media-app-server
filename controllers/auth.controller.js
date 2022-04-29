@@ -31,6 +31,8 @@ module.exports.login = async (req, res) => {
     res.cookie("jwt", token, {
       httpOnly: true, // cannot be accessed with javscript/client-side script
       maxAge: tokenExpiry,
+      secure: true,
+      sameSite: "none"
     });
     res.status(200).json({ user: user._id });
   } catch (err) {
