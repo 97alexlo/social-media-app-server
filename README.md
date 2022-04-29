@@ -1,4 +1,4 @@
-# Social Media App Server
+# Social Media App (Server)
 https://social-media-app-client-six.vercel.app \
 (Screenshots below if link doesn't work) \
 \
@@ -29,16 +29,16 @@ Note: For the app to work in Safari, Prevent Cross Site Tracking must be disable
 
 ## Screenshots
 Profile Page
-![Profile page](https://i.imgur.com/YraCDWl.png) \
+![Profile page](https://i.imgur.com/YraCDWl.png) 
 
 News Feed
-![News Feed page](https://i.imgur.com/l4XmuX6.png) \
+![News Feed page](https://i.imgur.com/l4XmuX6.png) 
 
 Comment demo
-![Comment demo](https://i.imgur.com/3kAGnK8.png) \
+![Comment demo](https://i.imgur.com/3kAGnK8.png) 
 
 Create post demo
-![Create post demo](https://i.imgur.com/zUuBIlt.png) \
+![Create post demo](https://i.imgur.com/zUuBIlt.png) 
 
 Edit/Delete post demo
 ![Edit/Delete post demo](https://i.imgur.com/Fmq5Xdq.png)
