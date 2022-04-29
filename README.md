@@ -1,5 +1,5 @@
-# Social Media App Client
-The backend portion of a responsive social media application that works with Social Media App Client, independently created by Alex Lo
+# Social Media App Server
+The backend portion of a responsive social media application that works with [Social Media App Client](https://github.com/97alexlo/social-media-app-client), independently created by Alex Lo
 
 # Features
 * Images uploaded to AWS S3 and also deleted from S3 (when a post is deleted)
