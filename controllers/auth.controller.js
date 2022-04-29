@@ -29,7 +29,7 @@ module.exports.login = async (req, res) => {
     const token = createToken(user._id);
     // save token in cookies
     res.cookie("jwt", token, {
-      httpOnly: true, // secure because cannot be accessed with javscript/client-side script
+      httpOnly: true, // cannot be accessed with javscript/client-side script
       maxAge: tokenExpiry,
     });
     res.status(200).json({ user: user._id });
