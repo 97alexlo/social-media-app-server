@@ -29,8 +29,6 @@ module.exports.login = async (req, res) => {
     const token = createToken(user._id);
     // save token in cookies
     res.cookie("jwt", token, {
-      resave: true,
-      saveUninitialized: false,
       httpOnly: true,
       maxAge: tokenExpiry,
       secure: true,
@@ -46,8 +44,6 @@ module.exports.login = async (req, res) => {
 module.exports.logout = (req, res) => {
   // empty cookies
   res.cookie("jwt", "", {
-    resave: true,
-    saveUninitialized: false,
     httpOnly: true,
     maxAge: 1,
     sameSite: "none",
