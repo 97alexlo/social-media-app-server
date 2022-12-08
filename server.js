@@ -22,7 +22,12 @@ app.set("trust proxy", 1);
 //   preflightContinue: false,
 // };
 // app.use(cors(corsOptions));
-app.options('*', cors())
+const corsOptions = {
+  origin: ["http://localhost:3000"],
+ //update: or "origin: true," if you don't wanna add a specific one
+  credentials: true,
+};
+app.use(cors(corsOptions));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser());
