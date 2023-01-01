@@ -13,6 +13,7 @@ const app = express();
 
 app.set("trust proxy", 1);
 
+//test 
 // const corsOptions = {
 //   origin: process.env.CLIENT_URL,
 //   credentials: true,
