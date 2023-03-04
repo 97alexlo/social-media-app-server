@@ -28,7 +28,7 @@ const userSchema = new mongoose.Schema(
     },
     picture: {
       type: String,
-      default: "https://social-media-images-bucket.s3.us-west-2.amazonaws.com/no-image-found.jpeg",
+      default: "https://social-media-images-bucket.s3.us-west-2.amazonaws.com/no_image_found.jpg",
     },
     bio: {
       type: String,

@@ -5,24 +5,11 @@ const userRoutes = require("./routes/user.routes.js");
 const postRoutes = require("./routes/post.routes.js");
 const cookieParser = require("cookie-parser");
 const { checkUser, requireAuth } = require("./middleware/auth.middleware.js");
-const res = require("express/lib/response");
-const cors = require("cors");
-const path = require("path");
 
 const app = express();
 
 app.set("trust proxy", 1);
 
-//test 
-// const corsOptions = {
-//   origin: process.env.CLIENT_URL,
-//   credentials: true,
-//   allowedHeaders: ["sessionId", "Content-Type", "Access-Control-Allow-Origin"],
-//   exposedHeaders: ["sessionId"],
-//   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-//   preflightContinue: false,
-// };
-// app.use(cors(corsOptions));
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Credentials", true);
   res.header("Access-Control-Allow-Origin", req.headers.origin);
